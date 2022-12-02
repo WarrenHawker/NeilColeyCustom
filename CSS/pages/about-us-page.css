@@ -1,0 +1,39 @@
+@import url(../abstracts/colors.css);
+
+.band-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
+    max-width: 100% !important;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+}
+
+.band-section-header {
+    margin-bottom: 0.75em;
+    color: var(--color-secondary);
+    margin-top: 2em;
+}
+
+.band-member {
+    height: 400px;
+}
+
+.profile-picture {
+    align-self: center;
+    justify-self: center;
+    height: 300px;
+}
+
+.profile-picture img {
+    height: auto;
+    max-height: 300px;
+}
+
+.band-member-info h2 {
+    margin-bottom: 0;
+}
+
+.band-member-info p {
+    margin-top: 0;
+}

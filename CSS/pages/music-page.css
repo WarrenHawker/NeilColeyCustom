@@ -1,0 +1,20 @@
+@import url('abstracts/colors.css');
+
+.music-videos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 150px;
+    justify-content: space-evenly;
+    align-content: center;
+    padding-bottom: 40px;
+}
+
+.music-video-container {
+    width: 300px;
+}
+
+.music-video-container p, .music-video-container h2 {
+    width: 70%;
+    margin: auto;
+}

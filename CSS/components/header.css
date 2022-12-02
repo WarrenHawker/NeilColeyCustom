@@ -1,0 +1,154 @@
+@import url('abstracts/colors.css');
+@import url('abstracts/fonts.css');
+
+header {
+    display: flex;
+    padding-left: 1em;
+    gap: 20px;
+    z-index: 999 !important;
+    background-color: var(--bg-color-secondary);
+}
+
+.nav-bar-logo {
+    width: 200px;
+    min-width: 200px;
+    order: 1;
+}
+
+.nav {
+    order: 2;
+    padding-top: 1.5em;
+}
+
+.nav-bar {
+    display: flex;
+    gap: 20px;
+}
+
+.socials-links {
+    order: 3;
+    padding-top: 1.5em;
+}
+
+.socials-links a {
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.facebook-link {
+    font-size: 30px !important;
+    background-color: #4862a3;
+    padding: 0.15em;
+    margin-right: 1em;
+}
+
+.socials-links a:hover, .socials-links a:focus {
+    opacity: 80%;
+}
+
+.nav-link a {
+    color: var(--color-primary);
+}
+
+.nav-link a:hover, .nav-link a:focus {
+    color: var(--color-secondary);
+}
+
+.current-menu-item a {
+font-weight: var(--font-bold);
+color: var(--color-secondary);
+}
+
+.nav-toggle {
+    display: none;
+}
+
+@media (max-width:660px) {
+    header {
+        position: sticky;
+        top: 0;
+        justify-content: space-evenly;
+        padding: 0 5em;
+        height: 20%;
+        margin-bottom: 20px;
+        z-index: 50;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        background-color: rgba(32, 32, 32, 1);
+    }
+
+    .nav-toggle {
+        display: block;
+        background-color: rgba(32, 32, 32, 1);
+        color: var(--color-primary);
+        font-size: 3em;
+        border: none;
+        cursor: pointer;
+        height: 30%;
+        margin: auto;
+    }
+
+    .nav-toggle:hover, .nav-toggle:focus {
+        color: var(--color-secondary)
+    }
+
+    .socials-links {
+        order: unset;
+    }
+
+    .socials-links a {
+        display: block;
+        font-size: 40px;
+        color: #ffffff;
+        text-align: center;
+    }
+    
+    .facebook-link {
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .nav-bar-logo {
+        order: unset;
+        margin: auto;
+    }
+
+    .nav {
+        position: absolute;
+        background-color: rgba(32, 32, 32, 1);
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        width: 45%;
+        padding: 1em 0;
+        top: 148px;
+        left: 0;
+        transform: translateX(-600px);
+        transition: transform 0.3s 0s;
+      
+    }
+
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+        gap: 1em;
+        padding: 0;
+    }
+
+    .nav.mobile {
+        transform: translateX(0px);
+        transition: transform 0.3s 0s;
+    }
+
+    .nav-link {
+        width: 100%;
+        font-size: 1.25em;
+        padding-left: 10px;
+    }
+
+  
+}
+
+
+
+

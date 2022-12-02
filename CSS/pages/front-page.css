@@ -1,0 +1,14 @@
+@import url('abstracts/colors.css');
+@import url('abstracts/fonts.css');
+
+.upcoming-gig-container h1, .upcoming-gig-container p, .gigs-and-samples-group h1 {
+    color: var(--color-secondary);
+}
+
+@media (min-width:660px) {
+   .gigs-and-samples-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+   }
+}
